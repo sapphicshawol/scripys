@@ -1,0 +1,18 @@
+/* no.js photosets by @annasthms and @espoirthemes */
+initPhotosets();
+
+/* npfPhotosets by @codematurgy */
+var npfOptions={rowClass:"npf_row",imageContainerClass:"tmblr-full",generatedPhotosetContainerClass:"npf_photoset",imageClass:"npf_image",includeSingleRowImagesInPhotosets:!0,insertGalleryIndicator:!1,galleryIndicatorClass:"npf_gallery_indicator",galleryIndicatorContent:"<img src='image_url'>",photosetMargins:"1"};npfPhotosets(".posts",npfOptions);
+
+/* section tabs by @odeysseus*/
+$(document).ready(function(){$("section#tabs li").click(function(i){if(!$(this).hasClass("active")){var t=$(this).index()+1;$("section#tabs li.active").removeClass("active"),$(this).addClass("active"),$("section#tab article.box.active").removeClass("active"),$("section#tab article.box:nth-child("+t+")").addClass("active")}})});
+
+/* jjongminho */
+$(".2").one('click',function(){var c=$(".ppp");c.attr("src",c.data("src"))}),$(".4").one('click',function(){var c=$(".abt");c.attr("src",c.data("src"))}),$(".3").one('click',function(){var c=$(".petrol");c.attr("src",c.data("src"))}),$(".1").one('click',function(){var c=$(".msg");c.attr("src",c.data("src"))});function testFunction(){document.getElementById('ppp').click();};
+
+/* Modal window by suiomi.com
+Terms of Use apply www.suiomi.com/legal */
+$(document).ready(function(){$(".s-modal-trigger-link").on("click",function(){return $(".s-modal-wrapper").toggleClass("s-modal-toggle"),!1})});
+
+/* videos */
+document.querySelectorAll('video').forEach((v) => {v.autoplay = false; v.muted = false; v.volume = 0.5; v.preload = false; v.loop = true;});
